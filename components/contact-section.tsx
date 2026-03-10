@@ -103,7 +103,11 @@ export function ContactSection() {
                 </button>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+              <form
+                action="https://formspree.io/f/xaqpewnv"
+                method="POST"
+                className="flex flex-col gap-5"
+              >
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div className="flex flex-col gap-1.5">
                     <label htmlFor="name" className="text-sm font-medium text-foreground">
