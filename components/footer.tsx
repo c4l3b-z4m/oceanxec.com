@@ -56,18 +56,18 @@ export function Footer() {
                 className="flex items-center gap-2 text-sm text-primary-foreground/60 transition-colors hover:text-accent"
               >
                 <Phone className="h-4 w-4 flex-shrink-0" />
-                +593 4 123 4567
+                +593 960213000
               </a>
               <a
                 href="mailto:info@oceanxpress.ec"
                 className="flex items-center gap-2 text-sm text-primary-foreground/60 transition-colors hover:text-accent"
               >
                 <Mail className="h-4 w-4 flex-shrink-0" />
-                info@oceanxpress.ec
+                info@oceanxec.com
               </a>
               <span className="flex items-center gap-2 text-sm text-primary-foreground/60">
                 <MapPin className="h-4 w-4 flex-shrink-0" />
-                Guayaquil, Ecuador
+                Quito, Ecuador
               </span>
             </div>
           </div>
