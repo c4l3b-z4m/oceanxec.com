@@ -27,10 +27,27 @@ const contactInfo = [
 export function ContactSection() {
   const [submitted, setSubmitted] = useState(false)
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault()
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  e.preventDefault()
+
+  const form = e.currentTarget
+  const data = new FormData(form)
+
+  const response = await fetch("https://formspree.io/f/xaqpewnv", {
+    method: "POST",
+    body: data,
+    headers: {
+      Accept: "application/json",
+    },
+  })
+
+  if (response.ok) {
     setSubmitted(true)
+    form.reset()
+  } else {
+    alert("Hubo un error enviando el mensaje.")
   }
+}
 
   return (
     <section id="contacto" className="bg-secondary py-24">
