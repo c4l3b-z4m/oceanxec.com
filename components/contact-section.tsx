@@ -7,19 +7,19 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Teléfono",
-    value: "+593 4 123 4567",
+    value: "+593 960213000",
     href: "tel:+59341234567",
   },
   {
     icon: Mail,
     label: "Email",
-    value: "info@oceanxpress.ec",
+    value: "info@oceanxec.com",
     href: "mailto:info@oceanxpress.ec",
   },
   {
     icon: MapPin,
     label: "Dirección",
-    value: "Guayaquil, Ecuador",
+    value: "Quito, Ecuador",
     href: null,
   },
 ]
